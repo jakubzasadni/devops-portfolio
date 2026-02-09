@@ -8,7 +8,7 @@ const projects = [
     description: 'Projektowanie i utrzymanie infrastruktury, CI/CD pipelines, zarządzanie mikrousługami dla platformy car-sharing',
     tags: ['Kubernetes', 'Docker', 'Terraform', 'Jenkins', 'Gitea Actions', 'Networking'],
     link: 'https://traficar.pl',
-    logo: '/Traficar.png'
+    logo: `${import.meta.env.BASE_URL}Traficar.png`
   },
   {
     icon: FaCar,
@@ -17,7 +17,7 @@ const projects = [
     description: 'Infrastruktura, automatyzacja wdrożeń, monitoring i zarządzanie konfiguracją',
     tags: ['Docker', 'Jenkins', 'Ansible', 'Monitoring'],
     link: '#',
-    logo: '/Vehis.jpg'
+    logo: `${import.meta.env.BASE_URL}Vehis.jpg`
   },
   {
     icon: FaMoneyCheckAlt,
@@ -26,7 +26,7 @@ const projects = [
     description: 'Infrastruktura, utrzymanie i wdrożenie systemów SAS dla sektora finansowego (współpraca z SaS)',
     tags: ['VMware', 'GitLab', 'Security', 'Networking', 'SAS'],
     link: 'https://www.knf.gov.pl',
-    logo: '/KNF.jpg'
+    logo: `${import.meta.env.BASE_URL}KNF.jpg`
   },
   {
     icon: FaServer,
@@ -35,7 +35,7 @@ const projects = [
     description: 'Współpraca z firmą SaS - dostawca systemów SAS dla KNF. Infrastruktura, bezpieczeństwo, wdrożenia',
     tags: ['Infrastructure', 'Security', 'SAS', 'Networking'],
     link: '#',
-    logo: '/SaS.png'
+    logo: `${import.meta.env.BASE_URL}SaS.png`
   },
   {
     icon: FaPlane,
@@ -44,7 +44,7 @@ const projects = [
     description: 'Infrastructure dla systemu zarządzania flotą pojazdów, high-availability setup, monitoring',
     tags: ['Docker', 'CI/CD', 'Monitoring', 'Infrastructure'],
     link: '#',
-    logo: '/fleetonair_logo.jpg'
+    logo: `${import.meta.env.BASE_URL}fleetonair_logo.jpg`
   },
   {
     icon: FaCar,
@@ -53,7 +53,7 @@ const projects = [
     description: 'DevOps infrastructure, networking, continuous delivery dla platformy mobility',
     tags: ['Kubernetes', 'GitOps', 'Networking', 'CI/CD'],
     link: '#',
-    logo: '/Anycar.png'
+    logo: `${import.meta.env.BASE_URL}Anycar.png`
   },
 ]
 

@@ -8,7 +8,7 @@ export default function Company() {
             <div className="mb-3 text-xs text-gray-500 font-medium uppercase tracking-wider">Student</div>
             <div className="h-24 flex items-center justify-center">
               <img 
-                src="/Znak_graficzny_AGH.svg.png" 
+                src={`${import.meta.env.BASE_URL}Znak_graficzny_AGH.svg.png`}
                 alt="AGH Kraków" 
                 className="h-20 w-auto object-contain"
               />
@@ -23,7 +23,7 @@ export default function Company() {
             <div className="mb-3 text-xs text-gray-500 font-medium uppercase tracking-wider">DevOps Engineer</div>
             <div className="h-24 flex items-center justify-center">
               <img 
-                src="/logo-corelogic.png" 
+                src={`${import.meta.env.BASE_URL}logo-corelogic.png`}
                 alt="Core Logic" 
                 className="h-16 w-auto object-contain"
               />
