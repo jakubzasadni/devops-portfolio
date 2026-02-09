@@ -1,19 +1,19 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const socialLinks = [
-  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/yourusername' },
-  { icon: FaLinkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/yourprofile' },
-  { icon: FaEnvelope, label: 'Email', href: 'mailto:your.email@example.com' },
+  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/jakubzasadni' },
+  { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/jakub-zasadni/' },
+  { icon: FaEnvelope, label: 'Email', href: 'mailto:kubazasadni23@gmail.com' },
 ]
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-dark-100">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-8 text-gradient">
           Kontakt
         </h2>
-        <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
           Zainteresowany współpracą? Skontaktuj się ze mną!
         </p>
         <div className="flex gap-6 justify-center flex-wrap">
@@ -25,7 +25,7 @@ export default function Contact() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-8 py-4 bg-dark-200 border border-secondary/10 rounded-lg hover:bg-secondary hover:text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/30 font-semibold"
+                className="flex items-center gap-3 px-8 py-4 bg-white border-2 border-primary/20 rounded-lg hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-xl font-semibold text-gray-700"
               >
                 <Icon className="text-2xl" />
                 {link.label}

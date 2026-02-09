@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0078d4',
-        secondary: '#00bcf2',
-        accent: '#7b2cbf',
-        dark: {
-          100: '#1a1f3a',
-          200: '#0a0e27',
+        primary: '#10b981',
+        secondary: '#059669',
+        accent: '#34d399',
+        light: {
+          100: '#f0fdf4',
+          200: '#dcfce7',
         }
       },
       animation: {
