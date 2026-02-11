@@ -7,13 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#10b981',
-        secondary: '#059669',
-        accent: '#34d399',
-        light: {
-          100: '#f0fdf4',
-          200: '#dcfce7',
-        }
+        primary: '#8b5cf6',     // Purple
+        secondary: '#a78bfa',   // Light Purple
+        accent: '#c084fc',      // Lighter Purple
+        dark: '#0f172a',        // Very dark blue-black
+        darker: '#020617',      // Almost black
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

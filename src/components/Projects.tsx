@@ -1,4 +1,5 @@
 import { FaCar, FaServer, FaMoneyCheckAlt, FaPlane } from 'react-icons/fa'
+import ClickSpark from './ClickSpark'
 
 const projects = [
   {
@@ -59,12 +60,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="projects" className="py-20 bg-gradient-to-b from-dark to-darker">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-4 text-gradient">
           Projekty Komercyjne
         </h2>
-        <p className="text-center text-gray-600 mb-16 text-lg">
+        <p className="text-center text-gray-300 mb-16 text-lg">
           Core Logic - Infrastruktura, CI/CD, Cloud Architecture
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -72,9 +73,17 @@ export default function Projects() {
             return (
               <div
                 key={project.title}
-                className="bg-white p-8 rounded-xl border border-gray-200 card-hover shadow-lg"
+                className="bg-dark/50 backdrop-blur-sm p-8 rounded-xl border border-primary/20 card-hover shadow-lg shadow-primary/10 relative overflow-hidden"
               >
-                <div className="flex items-start gap-4 mb-4">
+                <ClickSpark
+                  sparkColor="#8b5cf6"
+                  sparkSize={8}
+                  sparkRadius={20}
+                  sparkCount={6}
+                  duration={500}
+                  easing="ease-out"
+                />
+                <div className="flex items-start gap-4 mb-4 relative z-10">
                   {/* Logo po lewej */}
                   <div className="flex-shrink-0">
                     <img 
@@ -86,16 +95,16 @@ export default function Projects() {
                   
                   {/* Tytuł i firma */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
+                    <h3 className="text-xl font-semibold text-white">{project.title}</h3>
                     <p className="text-sm text-primary font-medium">{project.company}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6">{project.description}</p>
+                <p className="text-gray-300 mb-6">{project.description}</p>
                 <div className="flex gap-2 flex-wrap mb-6">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-blue-50 text-primary text-sm rounded-full border border-primary/20 font-medium"
+                      className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full border border-primary/30 font-medium hover:bg-primary/20"
                     >
                       {tag}
                     </span>

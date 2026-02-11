@@ -1,10 +1,11 @@
 import { FaDocker, FaGitAlt, FaPython, FaAws, FaJenkins, FaNetworkWired } from 'react-icons/fa'
 import { SiKubernetes, SiTerraform, SiPrometheus } from 'react-icons/si'
+import GradualBlur from './GradualBlur'
 
 const skills = [
-  { icon: FaDocker, name: 'Docker', description: 'Konteneryzacja aplikacji i zarządzanie obrazami', priority: 'high' },
-  { icon: SiKubernetes, name: 'Kubernetes', description: 'Orkiestracja kontenerów i zarządzanie klastrami', priority: 'high' },
-  { icon: FaJenkins, name: 'CI/CD', description: 'Jenkins, GitHub Actions, GitLab CI', priority: 'high' },
+  { icon: FaDocker, name: 'Docker', description: 'Konteneryzacja aplikacji, zarządzanie obrazami oraz rejestrami obrazów', priority: 'high' },
+  { icon: SiKubernetes, name: 'Kubernetes', description: 'Tworzenie produkcyjnych klastrów i zarządzanie nimi', priority: 'high' },
+  { icon: FaJenkins, name: 'CI/CD', description: 'Jenkins, GitHub/Gitea Actions, ArgoCD', priority: 'high' },
   { icon: FaNetworkWired, name: 'Networking', description: 'Projektowanie i zarządzanie sieciami', priority: 'high' },
   { icon: SiPrometheus, name: 'Monitoring', description: 'Prometheus, Grafana, ELK Stack', priority: 'high' },
   { icon: FaGitAlt, name: 'Git & GitOps', description: 'Kontrola wersji i deklaratywne wdrożenia', priority: 'medium' },
@@ -15,7 +16,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-white">
+    <section id="skills" className="py-20 bg-gradient-to-b from-darker to-dark relative overflow-hidden" style={{ minHeight: '600px' }}>
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-gradient">
           Technologie & Narzędzia
@@ -24,10 +25,10 @@ export default function Skills() {
           {skills.map((skill) => {
             const Icon = skill.icon
             const priorityStyles = skill.priority === 'high' 
-              ? 'from-green-100 to-white border-green-300 shadow-lg' 
+              ? 'from-primary/20 to-dark/50 border-primary shadow-lg shadow-primary/20' 
               : skill.priority === 'medium'
-              ? 'from-green-50 to-white border-gray-200 shadow-md'
-              : 'from-gray-50 to-white border-gray-100 shadow-sm'
+              ? 'from-secondary/10 to-dark/50 border-secondary/50 shadow-md'
+              : 'from-dark/30 to-darker border-gray-700 shadow-sm'
             
             return (
               <div
@@ -35,13 +36,24 @@ export default function Skills() {
                 className={`bg-gradient-to-br ${priorityStyles} p-6 rounded-xl border card-hover text-center`}
               >
                 <Icon className="text-5xl text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">{skill.name}</h3>
-                <p className="text-gray-600 text-sm">{skill.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-white">{skill.name}</h3>
+                <p className="text-gray-300 text-sm">{skill.description}</p>
               </div>
             )
           })}
         </div>
       </div>
+      
+      <GradualBlur
+        target="parent"
+        position="bottom"
+        height="7rem"
+        strength={3}
+        divCount={5}
+        curve="bezier"
+        exponential
+        opacity={1}
+      />
     </section>
   )
 }
