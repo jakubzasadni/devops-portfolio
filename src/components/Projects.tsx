@@ -8,7 +8,7 @@ const projects = [
     icon: FaCar,
     title: 'Traficar',
     company: 'Core Logic',
-    description: 'Projektowanie i utrzymanie infrastruktury, CI/CD pipelines, zarządzanie mikrousługami dla platformy car-sharing',
+    description: 'Rozwój i utrzymanie infrastruktury, CI/CD pipelines, zarządzanie mikrousługami dla platformy car-sharing',
     tags: ['Kubernetes', 'Docker', 'Terraform', 'Jenkins', 'Gitea Actions', 'Networking'],
     link: 'https://traficar.pl',
     logo: `${import.meta.env.BASE_URL}Traficar.png`
@@ -17,7 +17,7 @@ const projects = [
     icon: FaCar,
     title: 'Vehis',
     company: 'Core Logic',
-    description: 'Infrastruktura, automatyzacja wdrożeń, monitoring i zarządzanie konfiguracją',
+    description: 'Infrastruktura HA, automatyzacja wdrożeń, monitoring, zarządzanie bazami danych oraz utrzymanie infrastruktury wysokiej dostępności',
     tags: ['Docker', 'Jenkins', 'Ansible', 'Monitoring'],
     link: 'https://vehis.pl',
     logo: `${import.meta.env.BASE_URL}Vehis.jpg`
@@ -26,7 +26,7 @@ const projects = [
     icon: FaMoneyCheckAlt,
     title: 'KNF - Komisja Nadzoru Finansowego',
     company: 'Core Logic & SaS',
-    description: 'Infrastruktura, utrzymanie i wdrożenie systemów SAS dla sektora finansowego (współpraca z SaS)',
+    description: 'Wdrożenie, infrastruktura i utrzymanie systemów SAS dla sektora finansowego (współpraca partnerska z SaS)',
     tags: ['VMware', 'GitLab', 'Security', 'Networking', 'SAS'],
     link: 'https://www.knf.gov.pl',
     logo: `${import.meta.env.BASE_URL}KNF.jpg`
@@ -35,7 +35,7 @@ const projects = [
     icon: FaServer,
     title: 'SaS',
     company: 'Core Logic',
-    description: 'Współpraca z firmą SaS - dostawca systemów SAS dla KNF. Infrastruktura, bezpieczeństwo, wdrożenia',
+    description: 'Współpraca z firmą SaS - dostawca systemów SAS dla KNF. Infrastruktura i wdrożenia',
     tags: ['Infrastructure', 'Security', 'SAS', 'Networking'],
     link: 'https://sasgrupa.pl',
     logo: `${import.meta.env.BASE_URL}SaS.png`
@@ -44,7 +44,7 @@ const projects = [
     icon: FaPlane,
     title: 'FleetOnAir',
     company: 'Core Logic',
-    description: 'Infrastructure dla systemu zarządzania flotą pojazdów, high-availability setup, monitoring',
+    description: 'Infrastruktura dla systemu zarządzania flotą pojazdów, IoT, monitoring, automatyzacja wdrożeń, utrzymanie systemu oraz aplikacja symulatora jazdy z telemetryką pojazdu',
     tags: ['Docker', 'CI/CD', 'Monitoring', 'Infrastructure'],
     link: 'https://fleetonair.com',
     logo: `${import.meta.env.BASE_URL}fleetonair_logo.jpg`
@@ -53,7 +53,7 @@ const projects = [
     icon: FaCar,
     title: 'Anycar',
     company: 'Core Logic',
-    description: 'DevOps infrastructure, networking, continuous delivery dla platformy mobility',
+    description: 'Projekt i wdrożenie infrastrukruty produkcyjnej dla platformy mobility',
     tags: ['Kubernetes', 'GitOps', 'Networking', 'CI/CD'],
     link: 'https://anycar.com.pl',
     logo: `${import.meta.env.BASE_URL}Anycar.png`
