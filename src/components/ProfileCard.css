@@ -241,7 +241,7 @@
 }
 
 .pc-avatar-content {
-  mix-blend-mode: normal;
+  mix-blend-mode: overlay;
   overflow: visible;
   transform: translateZ(2);
   backface-visibility: hidden;
@@ -258,6 +258,8 @@
   backface-visibility: hidden;
   will-change: transform;
   transition: transform 120ms ease-out;
+  filter: brightness(1.15) contrast(1.05) saturate(0.7);
+  opacity: 0.92;
 }
 
 .pc-avatar-content::before {
@@ -265,8 +267,14 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  backdrop-filter: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(96, 73, 110, 0.25) 0%,
+    rgba(96, 73, 110, 0.12) 30%,
+    transparent 60%
+  );
   pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 .pc-user-info {
