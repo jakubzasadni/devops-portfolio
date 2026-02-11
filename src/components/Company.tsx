@@ -5,7 +5,7 @@ export default function Company() {
         <div className="flex items-center justify-center gap-24 flex-wrap">
           {/* AGH */}
           <div className="text-center">
-            <div className="mb-3 text-xs text-purple-300 font-medium uppercase tracking-wider">Student</div>
+            <div className="mb-3 text-xs text-purple-300 font-medium uppercase tracking-wider">Inżynier | Automatyka I Robotyka</div>
             <div className="h-24 flex items-center justify-center">
               <img 
                 src={`${import.meta.env.BASE_URL}Znak_graficzny_AGH.svg.png`}

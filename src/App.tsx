@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-import Navbar from './components/Navbar'
+import PillNav from './components/PillNav'
 import Hero from './components/Hero'
 import Company from './components/Company'
 import Skills from './components/Skills'
@@ -8,19 +7,24 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <div className="min-h-screen">
-      <Navbar scrolled={scrolled} />
+      <PillNav 
+        logo={`${import.meta.env.BASE_URL}logo-corelogic.png`}
+        logoAlt="JZ"
+        items={[
+          { label: 'Strona Główna', href: '#home' },
+          { label: 'Umiejętności', href: '#skills' },
+          { label: 'Projekty', href: '#projects' },
+          { label: 'Kontakt', href: '#contact' }
+        ]}
+        activeHref="#home"
+        baseColor="#6d28d9"
+        pillColor="#000000"
+        hoveredPillTextColor="#000000"
+        pillTextColor="#ffffff"
+        initialLoadAnimation={true}
+      />
       <Hero />
       <Company />
       <Skills />

@@ -96,7 +96,7 @@ export default function Hero() {
               logoHeight={65}
               gap={40}
               hoverSpeed={20}
-              scaleOnHover={true}
+              scaleOnHover={false}
               fadeOut={true}
               fadeOutColor="#020617"
               ariaLabel="Project partners"
