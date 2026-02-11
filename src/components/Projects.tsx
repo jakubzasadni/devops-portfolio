@@ -1,6 +1,7 @@
 import { FaCar, FaServer, FaMoneyCheckAlt, FaPlane } from 'react-icons/fa'
 import ClickSpark from './ClickSpark'
 import PixelCard from './PixelCard'
+import SplitText from './SplitText'
 
 const projects = [
   {
@@ -18,7 +19,7 @@ const projects = [
     company: 'Core Logic',
     description: 'Infrastruktura, automatyzacja wdrożeń, monitoring i zarządzanie konfiguracją',
     tags: ['Docker', 'Jenkins', 'Ansible', 'Monitoring'],
-    link: '#',
+    link: 'https://vehis.pl',
     logo: `${import.meta.env.BASE_URL}Vehis.jpg`
   },
   {
@@ -36,7 +37,7 @@ const projects = [
     company: 'Core Logic',
     description: 'Współpraca z firmą SaS - dostawca systemów SAS dla KNF. Infrastruktura, bezpieczeństwo, wdrożenia',
     tags: ['Infrastructure', 'Security', 'SAS', 'Networking'],
-    link: '#',
+    link: 'https://sasgrupa.pl',
     logo: `${import.meta.env.BASE_URL}SaS.png`
   },
   {
@@ -45,7 +46,7 @@ const projects = [
     company: 'Core Logic',
     description: 'Infrastructure dla systemu zarządzania flotą pojazdów, high-availability setup, monitoring',
     tags: ['Docker', 'CI/CD', 'Monitoring', 'Infrastructure'],
-    link: '#',
+    link: 'https://fleetonair.com',
     logo: `${import.meta.env.BASE_URL}fleetonair_logo.jpg`
   },
   {
@@ -54,7 +55,7 @@ const projects = [
     company: 'Core Logic',
     description: 'DevOps infrastructure, networking, continuous delivery dla platformy mobility',
     tags: ['Kubernetes', 'GitOps', 'Networking', 'CI/CD'],
-    link: '#',
+    link: 'https://anycar.com.pl',
     logo: `${import.meta.env.BASE_URL}Anycar.png`
   },
 ]
@@ -70,9 +71,17 @@ export default function Projects() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-4xl font-bold text-center mb-4 text-gradient">
-          Projekty Komercyjne
-        </h2>
+        <div className="mb-4">
+          <SplitText
+            text="Projekty Komercyjne"
+            className="text-4xl font-bold text-white text-center"
+            delay={30}
+            duration={0.8}
+            ease="power3.out"
+            from={{ opacity: 0, y: 20 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+        </div>
         <p className="text-center text-gray-300 mb-16 text-lg">
           Core Logic - Infrastruktura, CI/CD, Cloud Architecture
         </p>

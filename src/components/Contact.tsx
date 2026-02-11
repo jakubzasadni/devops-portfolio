@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import SplitText from './SplitText'
 
 const socialLinks = [
   { icon: FaGithub, label: 'GitHub', href: 'https://github.com/jakubzasadni' },
@@ -10,9 +11,17 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-darker to-dark">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold mb-8 text-gradient">
-          Kontakt
-        </h2>
+        <div className="mb-8">
+          <SplitText
+            text="Kontakt"
+            className="text-4xl font-bold text-white text-center"
+            delay={30}
+            duration={0.8}
+            ease="power3.out"
+            from={{ opacity: 0, y: 20 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+        </div>
         <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
           Zainteresowany współpracą? Skontaktuj się ze mną!
         </p>

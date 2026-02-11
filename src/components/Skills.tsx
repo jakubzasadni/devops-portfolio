@@ -1,6 +1,6 @@
 import { FaDocker, FaGitAlt, FaPython, FaAws, FaJenkins, FaNetworkWired } from 'react-icons/fa'
 import { SiKubernetes, SiTerraform, SiPrometheus } from 'react-icons/si'
-import GradualBlur from './GradualBlur'
+import SplitText from './SplitText'
 
 const skills = [
   { icon: FaDocker, name: 'Docker', description: 'Konteneryzacja aplikacji, zarządzanie obrazami oraz rejestrami obrazów', priority: 'high' },
@@ -18,9 +18,17 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-darker to-dark relative overflow-hidden" style={{ minHeight: '600px' }}>
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-gradient">
-          Technologie & Narzędzia
-        </h2>
+        <div className="mb-20">
+          <SplitText
+            text="Technologie & Narzędzia"
+            className="text-4xl font-bold text-white text-center"
+            delay={30}
+            duration={0.8}
+            ease="power3.out"
+            from={{ opacity: 0, y: 20 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill) => {
             const Icon = skill.icon
@@ -43,17 +51,6 @@ export default function Skills() {
           })}
         </div>
       </div>
-      
-      <GradualBlur
-        target="parent"
-        position="bottom"
-        height="7rem"
-        strength={3}
-        divCount={5}
-        curve="bezier"
-        exponential
-        opacity={1}
-      />
     </section>
   )
 }
