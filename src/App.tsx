@@ -19,7 +19,7 @@ function App() {
           { label: 'Kontakt', href: '#contact' }
         ]}
         activeHref="#home"
-        baseColor="#6d28d9"
+        baseColor="#a855f7"
         pillColor="#000000"
         hoveredPillTextColor="#000000"
         pillTextColor="#ffffff"

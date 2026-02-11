@@ -28,7 +28,7 @@ export default function Skills() {
               ? 'from-primary/20 to-dark/50 border-primary shadow-lg shadow-primary/20' 
               : skill.priority === 'medium'
               ? 'from-secondary/10 to-dark/50 border-secondary/50 shadow-md'
-              : 'from-dark/30 to-darker border-gray-700 shadow-sm'
+              : 'from-secondary/10 to-dark/50 border-secondary/50 shadow-md'
             
             return (
               <div
