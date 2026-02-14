@@ -2,7 +2,7 @@ export default function Company() {
   return (
     <section className="py-12 bg-gradient-to-b from-dark to-darker border-y border-primary/10">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-center gap-24 flex-wrap">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24">
           {/* AGH */}
           <div className="text-center">
             <div className="mb-3 text-xs text-purple-300 font-medium uppercase tracking-wider">Inżynier | Automatyka I Robotyka</div>
@@ -16,7 +16,8 @@ export default function Company() {
             <div className="mt-2 text-base font-bold text-white">AGH Kraków</div>
           </div>
           
-          <div className="h-24 w-px bg-primary/30"></div>
+          <div className="hidden lg:block h-24 w-px bg-primary/30"></div>
+          <div className="block lg:hidden h-px w-24 bg-primary/30"></div>
           
           {/* Core Logic */}
           <div className="text-center">
