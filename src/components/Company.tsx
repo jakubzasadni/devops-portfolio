@@ -25,7 +25,7 @@ export default function Company() {
               <img 
                 src={`${import.meta.env.BASE_URL}logo-corelogic.png`}
                 alt="Core Logic" 
-                className="h-16 w-auto object-contain"
+                className="h-8 w-auto object-contain"
               />
             </div>
             <div className="mt-2 text-base font-bold text-white">Core Logic</div>
