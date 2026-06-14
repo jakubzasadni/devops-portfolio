@@ -54,15 +54,11 @@ export default function Hero() {
           {/* Description */}
           <div className="flex-1 max-w-2xl">
             <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed text-left">
-              Specjalizuję się we wdrażaniu i utrzymywaniu <span className="text-primary font-semibold">infrastruktury skonteneryzowanej</span>, 
-              oraz zajmuję się ich <span className="text-primary font-semibold">automatyzacją</span> z wykorzystaniem 
+              Specjalizuję się we wdrażaniu i utrzymywaniu infrastruktury skonteneryzowanej od warstwy sprzętowej po pełne wdrożenie, oraz zajmuję się ich automatyzacją z wykorzystaniem
               <span className="text-primary font-semibold"> CI/CD</span>, <span className="text-primary font-semibold">monitoringu</span> i najlepszych praktyk DevOps.
             </p>
             <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed text-left">
-              Pracuję z technologiami takimi jak <span className="text-secondary font-semibold">Kubernetes</span>, 
-              <span className="text-secondary font-semibold"> Docker</span>, 
-              <span className="text-secondary font-semibold"> Terraform</span>, oraz całym ekosystemem narzędzi do 
-              zarządzania infrastrukturą i automatyzacji procesów wdrożeniowych.
+              Pracuję z technologiami takimi jak <span className="text-secondary font-semibold">Kubernetes</span>, <span className="text-secondary font-semibold">Docker</span>, <span className="text-secondary font-semibold">Ansible</span>, oraz całym ekosystemem narzędzi do zarządzania infrastrukturą i automatyzacji procesów wdrożeniowych.
             </p>
 
             {/* Tech stack badges */}
