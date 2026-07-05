@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import LogoLoop from './LogoLoop';
 import ProfileCard from './ProfileCard';
 import DarkVeil from './DarkVeil';
+import CVModal from './CVModal';
 
 export default function Hero() {
+  const [cvModalOpen, setCvModalOpen] = useState(false);
+
   const handleContactClick = () => {
     const contactSection = document.getElementById('contact');
     contactSection?.scrollIntoView({ behavior: 'smooth' });
@@ -88,7 +92,14 @@ export default function Hero() {
               >
                 Skontaktuj się
               </a>
+              <button
+                onClick={() => setCvModalOpen(true)}
+                className="px-8 py-3 border-2 border-white/20 text-white/80 hover:border-white/50 hover:text-white rounded-lg font-semibold transition-all duration-300"
+              >
+                Pobierz CV
+              </button>
             </div>
+            <CVModal isOpen={cvModalOpen} onClose={() => setCvModalOpen(false)} />
           </div>
         </div>
 
