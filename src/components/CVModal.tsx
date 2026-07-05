@@ -16,7 +16,7 @@ export default function CVModal({ isOpen, onClose }: CVModalProps) {
 
   if (!isOpen) return null;
 
-  const cvUrl = `${window.location.origin}/CV_JakubZasadni.pdf`;
+  const cvUrl = 'https://drive.google.com/file/d/10GL7gLyYzoxCHiPke5EU_Wy0Gi480jYj/view?usp=drive_link';
 
   const handleSend = async () => {
     if (!email.includes('@')) return;
