@@ -2,7 +2,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const EMAILJS_SERVICE_ID = 'service_yl37uf8';
-const EMAILJS_TEMPLATE_ID = 'template_agl60st';
+const EMAILJS_TEMPLATE_ID = 'template_pijm9jb';
 const EMAILJS_PUBLIC_KEY = 'Y4sqkVZ78waf4XhyQ';
 
 interface CVModalProps {
